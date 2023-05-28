@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação Lista Form</title>
+</head>
+<body>
+    <h1>Listas no form</h1>
+
+    <form action="https://www.google.com/search">
+        <label for="q">Escolha o desejado</label>
+        <input id="q" name="q" list="browser" required>
+        <input type="submit" value="Enviar">
+        <datalist id="browser">
+            <option value="Internet explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </form>
+</body>
+</html>

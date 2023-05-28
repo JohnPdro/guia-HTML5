@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+
+<body>
+    <h1>Tipos de input</h1>
+
+    <hr>
+
+    <form action="" autocomplete="off">
+
+        <h3>Text</h3>
+        <!-- Tipo de input text é utilizado para digitar textos, nomes e etc...-->
+        <label for="frstname">First name:</label><br>
+        <input type="text" id="frstname" name="frstname"><br>
+        <label for="lstname">Last name:</label><br>
+        <input type="text" id="lstname" name="lstname"><!-- name é importante para o backend-->
+
+        <hr>
+
+        <h3>Password</h3>
+        <!-- Tipo de input password é utilizado para digitar senha-->
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd">
+
+        <hr>
+
+        <h3>Submit</h3>
+        <!-- Tipo de input submit como o nome já diz utilizado para enviar as informações digitadas-->
+        <label for="fstname">First name:</label><br>
+        <input type="text" id="fstname" name="fstname"><br>
+        <label for="lsname">Last name:</label><br>
+        <input type="text" id="lsname" name="lsname"><br><br>
+        <input type="submit" value="Submit">
+
+        <hr>
+
+        <h3>Reset</h3>
+        <!-- Tipo de input reset utilizado para apagar todas as informações digitadas dentro do form-->
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+
+        <hr>
+
+        <h3>Radio</h3>
+        <!-- Tipo de input Radio é possivel selecionar apenas um -->
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+
+        <hr>
+
+        <h3>Checkbox</h3>
+        <!-- Tipo de input Checkbox é possível selecionar um ou mais-->
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+
+        <hr>
+
+        <h3>Button</h3>
+        <!-- Tipo de input Button utilizado para interasão front e back-->
+        <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+
+        <hr>
+
+        <h3>Color</h3>
+        <!-- Tipo de input Color utilizado para selecionar uma cor-->
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+
+        <hr>
+
+        <h3>Date</h3>
+        <!-- Tipo de input Date utilizado para selecionar uma data -->
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        <!-- É possível também definar data máxima e mínima com a seguinte forma-->
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02">]
+
+        <hr>
+
+        <h3>Datetime-local</h3>
+        <!-- Tipo de input datetime-local utilizado para selecionar data e hora-->
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+
+        <hr>
+
+        <h3>E-mail</h3>
+        <!--Tipo de input e-mail campo onde é possivel digitar seu e-mail-->
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">
+
+        <hr>
+
+        <h3>File</h3>
+        <!-- Tipo de input file utilizado para selecionar um arquivo do computador para enviar-->
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile">
+
+        <hr>
+
+        <h3>Number</h3>
+        <!-- Tipo de input number utilizado para digitar números, é possível declarar mínimo e máximo-->
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+
+        <hr>
+
+        <h3>Range</h3>
+        <!-- Tipo de input Range, linha de seleção(volume)-->
+        <label for="vol">Volume (between 0 and 50):</label>
+        <input type="range" id="vol" name="vol" min="0" max="50">
+
+        <hr>
+
+        <h3>Tel</h3>
+        <!-- Tipo de input tel utilizado para digitar o número de telefone-->
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+        <hr>
+
+        <h3>Url</h3>
+        <!-- Tipo de input url utilizado para inserir uma url-->
+        <label for="homepage">Add your homepage:</label>
+        <input type="url" id="homepage" name="homepage">
+    </form>
+</body>
+
+</html>
