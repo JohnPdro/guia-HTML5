@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="home.html"><img
+                    src="https://cdn.areademembros.com/files/instancia_1851/editor/XGV6ruZ9zEINrDQSTFdF1hINl7DKitsftuoU7Hgq.png"
+                    alt="Logo SpaceX"></a>
+            <a href="naves.html">| The Spaceships</a>
+            <a href="contrate.html">| Hire Us</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h2>Hire Us Now</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni maxime aliquam provident, cupiditate
+                similique iste ea modi, quos culpa dolore dicta. Molestiae sunt nihil.</p>
+        </section>
+        <br><br>
+        <section>
+            <form action="" method="get" autocomplete="on">
+                <label for="nome">Name:</label>
+                <input type="text" name="nome" id="nome">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" autocomplete="off">
+
+                <br><br><br>
+
+                <label for="naves">Spaceships</label>
+                <select name="naves" id="naves">
+                    <option value="vazio">--- Choice ---</option>
+                    <option value="falcon9">Falcon 9</option>
+                    <option value="falconH">Falcon Heavy</option>
+                </select>
+                <label for="tipo">Type of Services</label>
+                <input type="search" name="tipo" id="tipo" list="tipos">
+                <datalist id="tipos"> <!-- Recomendado utilizar o atributo list com o input search para ter opções predefinidas como abaixo-->
+                    <option value="Lorem ipsum dolor sit amet consec."></option>
+                    <option value="Lorem ipsum dolor ."></option>
+                    <option value="Lorem ipsum dolor sit amet consectetur."></option>
+                    <option value="Lorem ipsum dolor sit amet."></option>
+                </datalist>
+
+                <br><br><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
